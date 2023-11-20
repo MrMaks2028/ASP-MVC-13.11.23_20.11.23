@@ -1,0 +1,31 @@
+﻿
+@*
+    @model DiceRollerModel
+For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null; 
+}
+<!doctype html>
+<html>
+<head>
+    <title>Кубики</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h3>
+        <pre>
+        Кубик № 1 = @Model.first_dice
+        Кубик № 2 = @Model.second_dice
+        </pre>
+    </h3>
+    <img src=@Model.first_dice_file_path alt="" />
+    <br>
+    <img src=@Model.second_dice_file_path  alt="" />
+    <br>
+    <img src="~/Views/Dice/img/3.png" width="200"/>
+    <h2>
+        <p><a href="https://localhost:8888/">Назад</a></p>
+    </h2>
+</body>
+</html>
